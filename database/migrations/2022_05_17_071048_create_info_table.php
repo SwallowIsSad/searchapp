@@ -13,7 +13,7 @@ class CreateInfoTable extends Migration
      */
     public function up()
     {
-        Schema::create('info', function (Blueprint $table) {
+        Schema::create('infos', function (Blueprint $table) {
             $table->id();
             $table->string('company')->comment('회사명');
             $table->unsignedTinyInteger('category')->comment('카테고리');
@@ -34,6 +34,6 @@ class CreateInfoTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('info');
+        Schema::dropIfExists('infos');
     }
 }

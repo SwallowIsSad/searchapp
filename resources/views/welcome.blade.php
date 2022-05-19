@@ -6,6 +6,7 @@
     <title>Document</title>
 </head>
 <body>
-    dd
+sdsds 
+    <?php var_dump($data);?>
 </body>
 </html>
